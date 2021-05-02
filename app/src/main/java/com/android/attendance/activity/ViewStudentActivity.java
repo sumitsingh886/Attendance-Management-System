@@ -40,7 +40,6 @@ public class ViewStudentActivity extends Activity {
 			@Override
 			public void onItemSelected(AdapterView<?> arg0, View view,
 					int arg2, long arg3) {
-				// TODO Auto-generated method stub
 				((TextView) arg0.getChildAt(0)).setTextColor(Color.WHITE);
 				branch =(String) spinnerbranch.getSelectedItem();
 
@@ -48,7 +47,6 @@ public class ViewStudentActivity extends Activity {
 
 			@Override
 			public void onNothingSelected(AdapterView<?> arg0) {
-				// TODO Auto-generated method stub
 			}
 		});
 
@@ -58,13 +56,11 @@ public class ViewStudentActivity extends Activity {
 		.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 		spinnerbranch.setAdapter(adapter_branch);
 
-		///......................spinner2
 
 		spinneryear.setOnItemSelectedListener(new OnItemSelectedListener() {
 			@Override
 			public void onItemSelected(AdapterView<?> arg0, View view,
 					int arg2, long arg3) {
-				// TODO Auto-generated method stub
 				((TextView) arg0.getChildAt(0)).setTextColor(Color.WHITE);
 				year =(String) spinneryear.getSelectedItem();
 
@@ -72,7 +68,6 @@ public class ViewStudentActivity extends Activity {
 
 			@Override
 			public void onNothingSelected(AdapterView<?> arg0) {
-				// TODO Auto-generated method stub
 			}
 		});
 
@@ -103,7 +98,6 @@ public class ViewStudentActivity extends Activity {
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
-		// Inflate the menu; this adds items to the action bar if it is present.
 		getMenuInflater().inflate(R.menu.main, menu);
 		return true;
 	}

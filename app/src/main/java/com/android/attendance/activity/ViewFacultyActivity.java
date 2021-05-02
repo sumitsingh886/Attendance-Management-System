@@ -84,7 +84,6 @@ public class ViewFacultyActivity extends Activity {
 				});
 				alertDialogBuilder.setNegativeButton("No",new DialogInterface.OnClickListener() {
 					public void onClick(DialogInterface dialog,int id) {
-						// cancel the alert box and put a Toast to the user
 						dialog.cancel();
 						Toast.makeText(getApplicationContext(), "You choose cancel", 
 								Toast.LENGTH_LONG).show();
@@ -92,7 +91,6 @@ public class ViewFacultyActivity extends Activity {
 				});
 
 				AlertDialog alertDialog = alertDialogBuilder.create();
-				// show alert
 				alertDialog.show();
 
 
@@ -112,7 +110,6 @@ public class ViewFacultyActivity extends Activity {
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
-		// Inflate the menu; this adds items to the action bar if it is present.
 		getMenuInflater().inflate(R.menu.main, menu);
 		return true;
 	}
