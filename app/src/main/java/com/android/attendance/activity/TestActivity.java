@@ -48,37 +48,6 @@ public class TestActivity extends Activity {
 				dbAdapter.addAttendanceSession(attendanceSessionBean);
 				Log.d("add", "inserted");
 				
-				/*AttendanceSessionBean bean = new AttendanceSessionBean();
-				bean=dbAdapter.getAttendance();
-				Log.d("AsessionId", bean.getAttendance_session_id()+"");
-				Log.d("fId", bean.getAttendance_session_faculty_id()+"");
-				Log.d("class", bean.getAttendance_session_class());
-				Log.d("dept", bean.getAttendance_session_department());
-				Log.d("fId", bean.getAttendance_session_faculty_id()+"");
-				Log.d("status", bean.getAttendance_session_class());
-				
-				FacultyBean facultyBean = new FacultyBean();
-				
-				facultyBean.setFaculty_firstname("Abc");
-				facultyBean.setFaculty_lastname("a");
-				facultyBean.setFaculty_mobilenumber("9898989898");
-				facultyBean.setFaculty_address("pune");
-				facultyBean.setFaculty_username("a");
-				facultyBean.setFaculty_password("Abc123");
-				
-				dbAdapter.addFaculty(facultyBean);
-				
-				StudentBean studentBean = new StudentBean();
-				
-				studentBean.setStudent_firstname("b");
-				studentBean.setStudent_lastname("b");
-				studentBean.setStudent_mobilenumber("8989898988");
-				studentBean.setStudent_address("pune");
-				studentBean.setStudent_department("CSE");
-				studentBean.setStudent_class("BE");
-				
-				dbAdapter.addStudent(studentBean);*/
-				
 				
 				
 				ArrayList<AttendanceSessionBean> attendanceSessionBeanList = dbAdapter.getAllAttendanceSession();
